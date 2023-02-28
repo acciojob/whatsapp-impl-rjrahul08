@@ -26,4 +26,15 @@ public class WhatsappRepository {
         this.customGroupCount = 0;
         this.messageId = 0;
     }
+
+    public String createUser(String name, String mobile) {
+        if(!userMobile.contains(name)){
+            userMobile.add(name);
+        }
+        return "Added";
+    }
+
+    public Group createGroup(List<User> users) {
+
+    }
 }
